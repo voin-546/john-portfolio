@@ -22,9 +22,7 @@ app.get('*', (req, res) => {
     res.status(404).sendFile(__dirname + '/pages/404.html');
 });
 
-const PORT = 3000;
-const HOST = "localhost";
 
-app.listen(PORT, HOST, () => {
-    console.log(`Сервер запущен: http://${HOST}:${PORT}`)
+app.listen(() => {
+    console.log("Сервер запущен: http://john-portfolio-two.vercel.app")
 })
