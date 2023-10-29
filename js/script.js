@@ -25,6 +25,6 @@ var body = document.querySelector("body")
   var toggle = document.querySelector(".ui-switch")
   toggle.addEventListener('click', () => {
     body.classList.toggle('dark');
-    localStorage.darkMode=(localStorage.darkMode=="true") ? "false" : "true";
+    localStorage.darkMode=(localStorage.darkMode=="true") ? "false" : "true"
     toggle.classList.toggle("active")
   });
