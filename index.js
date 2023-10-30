@@ -24,5 +24,5 @@ app.get('*', (req, res) => {
 
 
 app.listen(() => {
-    console.log("Сервер запущен: http://john-portfolio-two.vercel.app")
+    console.log("Сервер запущен: http://localhost:3000")
 })
