@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", () => {
   {
     "particles": {
       "number": {
-        "value": 150,
+        "value": 100,
         "density": {
           "enable": true,
           "value_area": 800
