@@ -480,7 +480,7 @@ header {
     position: relative;
     height: 630px;
     @media (max-width: 770px) {
-        height: 120vh;
+        height: 110vh;
     }
     .container {
         justify-content: space-between;
@@ -514,6 +514,7 @@ header {
             font: 400 16px "Heebo";
             width: min(100%,  497px);
             padding: 40px 0 38px;
+            transition-delay: .3s;
             @media (max-width: 770px) {
                 padding-inline: 10px;
             }
@@ -524,13 +525,14 @@ header {
             font: 500 20px "Heebo";
             border-radius: 2px;
             background-color: #FF6464;
+            transition-delay: .3s;
         }
     }
     img {
         width: 243px;
         height: 243px;
         @media (max-width: 770px) {
-            margin: 30px auto;
+            margin: 50px auto;
         }
     }
 }
@@ -580,6 +582,9 @@ section {
                     width: min(100%,  418px);
                     background-color: #fff;
                     transition: 1.2s;
+                    &:nth-child(2) {
+                        transition-delay: .3s;
+                    }
                     @media (max-width: 855px) {
                         margin: auto;
                     }
@@ -634,6 +639,9 @@ section {
             display: flex;
             margin-block-end: 46px;
             flex-wrap: wrap;
+            &:nth-of-type(2), &:nth-of-type(3) {
+                transition-delay: .3s;
+            }
             img {
                 @media (max-width: 653px) {
                     width: 100%;
