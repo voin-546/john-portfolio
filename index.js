@@ -21,8 +21,8 @@ app.get("/blog", (req, res) => {
 app.get('*', (req, res) => {
     res.status(404).sendFile(__dirname + '/pages/404.html');
 });
-
-
-app.listen(() => {
-    console.log("Сервер запущен: http://localhost:3000")
+const PORT = 3000;
+const HOST = "localhost"
+app.listen(PORT, HOST, () => {
+    console.log(`Сервер запущен: http://${HOST}:${PORT}`)
 })
