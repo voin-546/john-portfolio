@@ -44,6 +44,7 @@ body {
         background-color: #203075;
         position: relative;
         overflow: hidden;
+        height: 100vh;
         .particle {
             position: absolute;
             display: block;
@@ -163,6 +164,8 @@ body {
             }
         }
         footer {
+            position: absolute;
+            bottom: 0;
             .social-links {
                 svg {
                     fill: #fff;
@@ -171,7 +174,7 @@ body {
             p {
                 color: #fff;
             }
-        }
+        }    
     }
     &.dark {
         background-color: #21243D;
@@ -525,7 +528,7 @@ header {
             font: 500 20px "Heebo";
             border-radius: 2px;
             background-color: #FF6464;
-            transition-delay: .3s;
+            transition-delay: .5s;
             display: inline-block;
         }
     }
