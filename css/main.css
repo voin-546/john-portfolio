@@ -7,6 +7,10 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 ::-webkit-scrollbar {
@@ -49,9 +53,145 @@
     opacity: 0;
   }
 }
+@media (prefers-color-scheme: dark) {
+  body.dark {
+    background-color: #21243D;
+  }
+  body.dark img {
+    color: #EDF7FA;
+  }
+  body.dark .box .animate {
+    border: 6px solid #fff;
+  }
+  body.dark header {
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+  body.dark header .header-container {
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(35px);
+            backdrop-filter: blur(35px);
+  }
+  body.dark header .header-container .burger .line {
+    background-color: #EDF7FA;
+  }
+  body.dark header a.logo {
+    color: #fff;
+  }
+  body.dark header nav ul li a {
+    color: #EDF7FA;
+  }
+  body.dark #particles-js .text h1, body.dark #particles-js .text p {
+    color: #EDF7FA;
+  }
+  body.dark section.posts {
+    background-color: #142850;
+  }
+  body.dark section.posts .recent p {
+    color: #EDF7FA;
+  }
+  body.dark section.posts .container .info .info-item {
+    background-color: #21243D;
+  }
+  body.dark section.posts .container .info .info-item h3, body.dark section.posts .container .info .info-item p {
+    color: #fff;
+  }
+  body.dark section.posts .container .info .info-item .line {
+    background-color: #fff;
+  }
+  body.dark section.works .works-text p, body.dark section.works .works-text h1 {
+    color: #EDF7FA;
+  }
+  body.dark section.works .card .card-body h2, body.dark section.works .card .card-body p {
+    color: #fff;
+  }
+  body.dark section.blog h1, body.dark section.blog h2 {
+    color: #EDF7FA;
+  }
+  body.dark section.blog p, body.dark section.blog .card .text p:nth-child(1) {
+    color: #fff;
+  }
+  body.dark section.blog .line {
+    background-color: #fff;
+  }
+  body.dark footer .social-links svg {
+    fill: #fff;
+  }
+  body.dark footer p {
+    color: #EDF7FA;
+  }
+}
 body {
   background-color: #fff;
   transition: background-color 1.2s;
+}
+body.dark {
+  background-color: #21243D;
+}
+body.dark img {
+  color: #EDF7FA;
+}
+body.dark .box .animate {
+  border: 6px solid #fff;
+}
+body.dark header {
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+body.dark header .header-container {
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(35px);
+          backdrop-filter: blur(35px);
+}
+body.dark header .header-container .burger .line {
+  background-color: #EDF7FA;
+}
+body.dark header a.logo {
+  color: #fff;
+}
+body.dark header nav ul li a {
+  color: #EDF7FA;
+}
+body.dark #particles-js .text h1, body.dark #particles-js .text p {
+  color: #EDF7FA;
+}
+body.dark section.posts {
+  background-color: #142850;
+}
+body.dark section.posts .recent p {
+  color: #EDF7FA;
+}
+body.dark section.posts .container .info .info-item {
+  background-color: #21243D;
+}
+body.dark section.posts .container .info .info-item h3, body.dark section.posts .container .info .info-item p {
+  color: #fff;
+}
+body.dark section.posts .container .info .info-item .line {
+  background-color: #fff;
+}
+body.dark section.works .works-text p, body.dark section.works .works-text h1 {
+  color: #EDF7FA;
+}
+body.dark section.works .card .card-body h2, body.dark section.works .card .card-body p {
+  color: #fff;
+}
+body.dark section.blog h1, body.dark section.blog h2 {
+  color: #EDF7FA;
+}
+body.dark section.blog p, body.dark section.blog .card .text p:nth-child(1) {
+  color: #fff;
+}
+body.dark section.blog .line {
+  background-color: #fff;
+}
+body.dark footer .social-links svg {
+  fill: #fff;
+}
+body.dark footer p {
+  color: #EDF7FA;
 }
 body.error {
   background-color: #203075;
@@ -66,644 +206,644 @@ body.error .particle {
   color: #fff;
 }
 body.error .particle:nth-child(1) {
-  top: 79.2270531401%;
-  left: 96.3035019455%;
-  font-size: 28px;
-  filter: blur(0.02px);
-  -webkit-animation: 30s float2 infinite;
-          animation: 30s float2 infinite;
-}
-body.error .particle:nth-child(2) {
-  top: 3.8929440389%;
-  left: 65.5577299413%;
-  font-size: 22px;
-  filter: blur(0.04px);
-  -webkit-animation: 32s float2 infinite;
-          animation: 32s float2 infinite;
-}
-body.error .particle:nth-child(3) {
-  top: 50.9179926561%;
-  left: 54.0806293019%;
-  font-size: 17px;
-  filter: blur(0.06px);
-  -webkit-animation: 38s float infinite;
-          animation: 38s float infinite;
-}
-body.error .particle:nth-child(4) {
-  top: 73.607748184%;
-  left: 31.1890838207%;
-  font-size: 26px;
-  filter: blur(0.08px);
-  -webkit-animation: 26s float infinite;
-          animation: 26s float infinite;
-}
-body.error .particle:nth-child(5) {
   top: 50.6699147381%;
-  left: 42.1155729677%;
+  left: 10.7737512243%;
   font-size: 21px;
-  filter: blur(0.1px);
+  filter: blur(0.02px);
   -webkit-animation: 21s floatReverse infinite;
           animation: 21s floatReverse infinite;
 }
+body.error .particle:nth-child(2) {
+  top: 84.1596130593%;
+  left: 59.3962999026%;
+  font-size: 27px;
+  filter: blur(0.04px);
+  -webkit-animation: 25s float infinite;
+          animation: 25s float infinite;
+}
+body.error .particle:nth-child(3) {
+  top: 28.9156626506%;
+  left: 87.3786407767%;
+  font-size: 30px;
+  filter: blur(0.06px);
+  -webkit-animation: 39s floatReverse infinite;
+          animation: 39s floatReverse infinite;
+}
+body.error .particle:nth-child(4) {
+  top: 10.8108108108%;
+  left: 76.9230769231%;
+  font-size: 14px;
+  filter: blur(0.08px);
+  -webkit-animation: 40s floatReverse2 infinite;
+          animation: 40s floatReverse2 infinite;
+}
+body.error .particle:nth-child(5) {
+  top: 76.9792935445%;
+  left: 96.9637610186%;
+  font-size: 21px;
+  filter: blur(0.1px);
+  -webkit-animation: 21s float2 infinite;
+          animation: 21s float2 infinite;
+}
 body.error .particle:nth-child(6) {
-  top: 19.680196802%;
-  left: 79.9605133268%;
-  font-size: 13px;
+  top: 59.8773006135%;
+  left: 36.4532019704%;
+  font-size: 15px;
   filter: blur(0.12px);
-  -webkit-animation: 34s float infinite;
-          animation: 34s float infinite;
+  -webkit-animation: 36s float2 infinite;
+          animation: 36s float2 infinite;
 }
 body.error .particle:nth-child(7) {
-  top: 3.9167686659%;
-  left: 81.6125860374%;
-  font-size: 17px;
+  top: 72.2891566265%;
+  left: 6.7961165049%;
+  font-size: 30px;
   filter: blur(0.14px);
-  -webkit-animation: 37s float infinite;
-          animation: 37s float infinite;
+  -webkit-animation: 31s floatReverse2 infinite;
+          animation: 31s floatReverse2 infinite;
 }
 body.error .particle:nth-child(8) {
-  top: 64.1555285541%;
-  left: 58.651026393%;
-  font-size: 23px;
+  top: 37.1638141809%;
+  left: 24.557956778%;
+  font-size: 18px;
   filter: blur(0.16px);
-  -webkit-animation: 24s floatReverse infinite;
-          animation: 24s floatReverse infinite;
+  -webkit-animation: 28s float2 infinite;
+          animation: 28s float2 infinite;
 }
 body.error .particle:nth-child(9) {
-  top: 40.5797101449%;
-  left: 40.8560311284%;
-  font-size: 28px;
+  top: 64.8910411622%;
+  left: 55.5555555556%;
+  font-size: 26px;
   filter: blur(0.18px);
-  -webkit-animation: 25s floatReverse infinite;
-          animation: 25s floatReverse infinite;
+  -webkit-animation: 25s floatReverse2 infinite;
+          animation: 25s floatReverse2 infinite;
 }
 body.error .particle:nth-child(10) {
-  top: 10.615199035%;
-  left: 79.6890184645%;
-  font-size: 29px;
+  top: 34.5252774353%;
+  left: 93.9663699308%;
+  font-size: 11px;
   filter: blur(0.2px);
-  -webkit-animation: 23s floatReverse infinite;
-          animation: 23s floatReverse infinite;
+  -webkit-animation: 37s float2 infinite;
+          animation: 37s float2 infinite;
 }
 body.error .particle:nth-child(11) {
-  top: 37.2093023256%;
-  left: 32.4483775811%;
-  font-size: 17px;
+  top: 71.6564417178%;
+  left: 66.9950738916%;
+  font-size: 15px;
   filter: blur(0.22px);
-  -webkit-animation: 37s float infinite;
-          animation: 37s float infinite;
+  -webkit-animation: 33s float2 infinite;
+          animation: 33s float2 infinite;
 }
 body.error .particle:nth-child(12) {
-  top: 86.6995073892%;
-  left: 5.9288537549%;
-  font-size: 12px;
+  top: 23.2445520581%;
+  left: 12.6705653021%;
+  font-size: 26px;
   filter: blur(0.24px);
+  -webkit-animation: 31s float infinite;
+          animation: 31s float infinite;
+}
+body.error .particle:nth-child(13) {
+  top: 67.9802955665%;
+  left: 90.9090909091%;
+  font-size: 12px;
+  filter: blur(0.26px);
+  -webkit-animation: 21s floatReverse infinite;
+          animation: 21s floatReverse infinite;
+}
+body.error .particle:nth-child(14) {
+  top: 17.3913043478%;
+  left: 33.0739299611%;
+  font-size: 28px;
+  filter: blur(0.28px);
+  -webkit-animation: 24s floatReverse2 infinite;
+          animation: 24s floatReverse2 infinite;
+}
+body.error .particle:nth-child(15) {
+  top: 61.9105199516%;
+  left: 27.2638753651%;
+  font-size: 27px;
+  filter: blur(0.3px);
+  -webkit-animation: 33s float2 infinite;
+          animation: 33s float2 infinite;
+}
+body.error .particle:nth-child(16) {
+  top: 2.9484029484%;
+  left: 72.9783037475%;
+  font-size: 14px;
+  filter: blur(0.32px);
+  -webkit-animation: 31s float infinite;
+          animation: 31s float infinite;
+}
+body.error .particle:nth-child(17) {
+  top: 22.3300970874%;
+  left: 7.8125%;
+  font-size: 24px;
+  filter: blur(0.34px);
   -webkit-animation: 26s float2 infinite;
           animation: 26s float2 infinite;
 }
-body.error .particle:nth-child(13) {
-  top: 78.914919852%;
-  left: 52.4233432245%;
-  font-size: 11px;
-  filter: blur(0.26px);
-  -webkit-animation: 34s float2 infinite;
-          animation: 34s float2 infinite;
-}
-body.error .particle:nth-child(14) {
-  top: 27.0531400966%;
-  left: 59.3385214008%;
-  font-size: 28px;
-  filter: blur(0.28px);
-  -webkit-animation: 29s float2 infinite;
-          animation: 29s float2 infinite;
-}
-body.error .particle:nth-child(15) {
-  top: 85.0855745721%;
-  left: 48.1335952849%;
-  font-size: 18px;
-  filter: blur(0.3px);
-  -webkit-animation: 25s float2 infinite;
-          animation: 25s float2 infinite;
-}
-body.error .particle:nth-child(16) {
-  top: 93.2038834951%;
-  left: 85.9375%;
-  font-size: 24px;
-  filter: blur(0.32px);
-  -webkit-animation: 26s floatReverse2 infinite;
-          animation: 26s floatReverse2 infinite;
-}
-body.error .particle:nth-child(17) {
-  top: 71.4810281518%;
-  left: 92.4287118977%;
-  font-size: 17px;
-  filter: blur(0.34px);
-  -webkit-animation: 23s floatReverse infinite;
-          animation: 23s floatReverse infinite;
-}
 body.error .particle:nth-child(18) {
-  top: 95.3316953317%;
-  left: 21.6962524655%;
-  font-size: 14px;
+  top: 12.5755743652%;
+  left: 34.0798442064%;
+  font-size: 27px;
   filter: blur(0.36px);
-  -webkit-animation: 32s float2 infinite;
-          animation: 32s float2 infinite;
+  -webkit-animation: 32s floatReverse2 infinite;
+          animation: 32s floatReverse2 infinite;
 }
 body.error .particle:nth-child(19) {
-  top: 71.6707021792%;
-  left: 75.0487329435%;
+  top: 2.9055690073%;
+  left: 79.9220272904%;
   font-size: 26px;
   filter: blur(0.38px);
-  -webkit-animation: 22s floatReverse2 infinite;
-          animation: 22s floatReverse2 infinite;
+  -webkit-animation: 32s floatReverse infinite;
+          animation: 32s floatReverse infinite;
 }
 body.error .particle:nth-child(20) {
-  top: 9.696969697%;
-  left: 75.1219512195%;
-  font-size: 25px;
+  top: 94.7496947497%;
+  left: 89.3032384691%;
+  font-size: 19px;
   filter: blur(0.4px);
-  -webkit-animation: 30s floatReverse2 infinite;
-          animation: 30s floatReverse2 infinite;
+  -webkit-animation: 26s float infinite;
+          animation: 26s float infinite;
 }
 body.error .particle:nth-child(21) {
-  top: 51.3939393939%;
-  left: 23.4146341463%;
-  font-size: 25px;
+  top: 37.7723970944%;
+  left: 27.2904483431%;
+  font-size: 26px;
   filter: blur(0.42px);
   -webkit-animation: 32s floatReverse2 infinite;
           animation: 32s floatReverse2 infinite;
 }
 body.error .particle:nth-child(22) {
-  top: 78.3555018138%;
-  left: 36.0272638754%;
-  font-size: 27px;
+  top: 20.6134969325%;
+  left: 39.4088669951%;
+  font-size: 15px;
   filter: blur(0.44px);
-  -webkit-animation: 25s floatReverse2 infinite;
-          animation: 25s floatReverse2 infinite;
+  -webkit-animation: 21s float2 infinite;
+          animation: 21s float2 infinite;
 }
 body.error .particle:nth-child(23) {
-  top: 80.490797546%;
-  left: 93.5960591133%;
-  font-size: 15px;
+  top: 58.4652862363%;
+  left: 95.9843290891%;
+  font-size: 21px;
   filter: blur(0.46px);
-  -webkit-animation: 40s float2 infinite;
-          animation: 40s float2 infinite;
+  -webkit-animation: 24s float infinite;
+          animation: 24s float infinite;
 }
 body.error .particle:nth-child(24) {
-  top: 29.3398533007%;
-  left: 75.6385068762%;
-  font-size: 18px;
+  top: 3.9167686659%;
+  left: 5.8997050147%;
+  font-size: 17px;
   filter: blur(0.48px);
-  -webkit-animation: 36s float2 infinite;
-          animation: 36s float2 infinite;
+  -webkit-animation: 40s float infinite;
+          animation: 40s float infinite;
 }
 body.error .particle:nth-child(25) {
-  top: 11.7503059976%;
-  left: 29.4985250737%;
-  font-size: 17px;
-  filter: blur(0.5px);
-  -webkit-animation: 27s float2 infinite;
-          animation: 27s float2 infinite;
-}
-body.error .particle:nth-child(26) {
-  top: 76.6060606061%;
-  left: 40.9756097561%;
-  font-size: 25px;
-  filter: blur(0.52px);
-  -webkit-animation: 29s floatReverse2 infinite;
-          animation: 29s floatReverse2 infinite;
-}
-body.error .particle:nth-child(27) {
-  top: 55.6097560976%;
-  left: 10.7843137255%;
-  font-size: 20px;
-  filter: blur(0.54px);
-  -webkit-animation: 31s float infinite;
-          animation: 31s float infinite;
-}
-body.error .particle:nth-child(28) {
-  top: 84.1075794621%;
-  left: 21.6110019646%;
+  top: 43.0317848411%;
+  left: 69.7445972495%;
   font-size: 18px;
-  filter: blur(0.56px);
-  -webkit-animation: 28s floatReverse2 infinite;
-          animation: 28s floatReverse2 infinite;
-}
-body.error .particle:nth-child(29) {
-  top: 50.6082725061%;
-  left: 22.5048923679%;
-  font-size: 22px;
-  filter: blur(0.58px);
-  -webkit-animation: 31s floatReverse2 infinite;
-          animation: 31s floatReverse2 infinite;
-}
-body.error .particle:nth-child(30) {
-  top: 65.9286592866%;
-  left: 33.5636722606%;
-  font-size: 13px;
-  filter: blur(0.6px);
-  -webkit-animation: 35s floatReverse infinite;
-          animation: 35s floatReverse infinite;
-}
-body.error .particle:nth-child(31) {
-  top: 58.9680589681%;
-  left: 48.3234714004%;
-  font-size: 14px;
-  filter: blur(0.62px);
-  -webkit-animation: 35s floatReverse infinite;
-          animation: 35s floatReverse infinite;
-}
-body.error .particle:nth-child(32) {
-  top: 98.2800982801%;
-  left: 72.9783037475%;
-  font-size: 14px;
-  filter: blur(0.64px);
-  -webkit-animation: 33s float2 infinite;
-          animation: 33s float2 infinite;
-}
-body.error .particle:nth-child(33) {
-  top: 73.8916256158%;
-  left: 85.9683794466%;
-  font-size: 12px;
-  filter: blur(0.66px);
+  filter: blur(0.5px);
   -webkit-animation: 26s float2 infinite;
           animation: 26s float2 infinite;
 }
-body.error .particle:nth-child(34) {
-  top: 78.431372549%;
-  left: 46.2598425197%;
-  font-size: 16px;
-  filter: blur(0.68px);
-  -webkit-animation: 37s floatReverse infinite;
-          animation: 37s floatReverse infinite;
+body.error .particle:nth-child(26) {
+  top: 22.1954161641%;
+  left: 56.3654033042%;
+  font-size: 29px;
+  filter: blur(0.52px);
+  -webkit-animation: 28s float2 infinite;
+          animation: 28s float2 infinite;
 }
-body.error .particle:nth-child(35) {
-  top: 36.4532019704%;
-  left: 6.9169960474%;
-  font-size: 12px;
-  filter: blur(0.7px);
-  -webkit-animation: 37s floatReverse2 infinite;
-          animation: 37s floatReverse2 infinite;
-}
-body.error .particle:nth-child(36) {
-  top: 56.0196560197%;
-  left: 3.9447731755%;
-  font-size: 14px;
-  filter: blur(0.72px);
+body.error .particle:nth-child(27) {
+  top: 5.8252427184%;
+  left: 30.2734375%;
+  font-size: 24px;
+  filter: blur(0.54px);
   -webkit-animation: 30s float2 infinite;
           animation: 30s float2 infinite;
 }
-body.error .particle:nth-child(37) {
-  top: 16.5651644336%;
-  left: 94.0254652302%;
+body.error .particle:nth-child(28) {
+  top: 38.0024360536%;
+  left: 20.5680705191%;
   font-size: 21px;
-  filter: blur(0.74px);
-  -webkit-animation: 25s float2 infinite;
-          animation: 25s float2 infinite;
+  filter: blur(0.56px);
+  -webkit-animation: 31s float2 infinite;
+          animation: 31s float2 infinite;
 }
-body.error .particle:nth-child(38) {
-  top: 79.5151515152%;
-  left: 81.9512195122%;
-  font-size: 25px;
-  filter: blur(0.76px);
-  -webkit-animation: 31s floatReverse infinite;
-          animation: 31s floatReverse infinite;
+body.error .particle:nth-child(29) {
+  top: 44.4444444444%;
+  left: 78.7937743191%;
+  font-size: 28px;
+  filter: blur(0.58px);
+  -webkit-animation: 28s float2 infinite;
+          animation: 28s float2 infinite;
 }
-body.error .particle:nth-child(39) {
-  top: 53.8555691554%;
-  left: 12.7826941986%;
-  font-size: 17px;
-  filter: blur(0.78px);
-  -webkit-animation: 34s floatReverse infinite;
-          animation: 34s floatReverse infinite;
-}
-body.error .particle:nth-child(40) {
-  top: 9.6735187424%;
-  left: 15.5793573515%;
-  font-size: 27px;
-  filter: blur(0.8px);
-  -webkit-animation: 22s floatReverse2 infinite;
-          animation: 22s floatReverse2 infinite;
-}
-body.error .particle:nth-child(41) {
-  top: 60.7961399276%;
-  left: 23.3236151603%;
-  font-size: 29px;
-  filter: blur(0.82px);
-  -webkit-animation: 35s float infinite;
-          animation: 35s float infinite;
-}
-body.error .particle:nth-child(42) {
-  top: 41.0256410256%;
-  left: 26.4965652601%;
-  font-size: 19px;
-  filter: blur(0.84px);
-  -webkit-animation: 38s float infinite;
-          animation: 38s float infinite;
-}
-body.error .particle:nth-child(43) {
-  top: 17.7121771218%;
-  left: 58.2428430405%;
-  font-size: 13px;
-  filter: blur(0.86px);
-  -webkit-animation: 39s float2 infinite;
-          animation: 39s float2 infinite;
-}
-body.error .particle:nth-child(44) {
-  top: 60.7843137255%;
-  left: 87.5984251969%;
-  font-size: 16px;
-  filter: blur(0.88px);
-  -webkit-animation: 26s floatReverse2 infinite;
-          animation: 26s floatReverse2 infinite;
-}
-body.error .particle:nth-child(45) {
-  top: 94.4649446494%;
-  left: 51.3326752221%;
-  font-size: 13px;
-  filter: blur(0.9px);
-  -webkit-animation: 22s floatReverse2 infinite;
-          animation: 22s floatReverse2 infinite;
-}
-body.error .particle:nth-child(46) {
-  top: 9.6385542169%;
-  left: 13.5922330097%;
-  font-size: 30px;
-  filter: blur(0.92px);
-  -webkit-animation: 25s floatReverse infinite;
-          animation: 25s floatReverse infinite;
-}
-body.error .particle:nth-child(47) {
-  top: 76.4207980653%;
-  left: 78.870496592%;
-  font-size: 27px;
-  filter: blur(0.94px);
-  -webkit-animation: 40s floatReverse infinite;
-          animation: 40s floatReverse infinite;
-}
-body.error .particle:nth-child(48) {
-  top: 61.985472155%;
-  left: 37.037037037%;
-  font-size: 26px;
-  filter: blur(0.96px);
-  -webkit-animation: 34s floatReverse infinite;
-          animation: 34s floatReverse infinite;
-}
-body.error .particle:nth-child(49) {
-  top: 50.8557457213%;
-  left: 5.8939096267%;
-  font-size: 18px;
-  filter: blur(0.98px);
-  -webkit-animation: 37s floatReverse infinite;
-          animation: 37s floatReverse infinite;
-}
-body.error .particle:nth-child(50) {
-  top: 68.7960687961%;
-  left: 91.7159763314%;
-  font-size: 14px;
-  filter: blur(1px);
-  -webkit-animation: 37s float infinite;
-          animation: 37s float infinite;
-}
-body.error .particle:nth-child(51) {
-  top: 86.1689106487%;
-  left: 1.9665683382%;
-  font-size: 17px;
-  filter: blur(1.02px);
-  -webkit-animation: 25s float infinite;
-          animation: 25s float infinite;
-}
-body.error .particle:nth-child(52) {
-  top: 70.7616707617%;
-  left: 40.4339250493%;
-  font-size: 14px;
-  filter: blur(1.04px);
-  -webkit-animation: 29s float infinite;
-          animation: 29s float infinite;
-}
-body.error .particle:nth-child(53) {
-  top: 4.8250904704%;
-  left: 55.3935860058%;
-  font-size: 29px;
-  filter: blur(1.06px);
-  -webkit-animation: 29s floatReverse2 infinite;
-          animation: 29s floatReverse2 infinite;
-}
-body.error .particle:nth-child(54) {
-  top: 91.8192918193%;
-  left: 9.8135426889%;
-  font-size: 19px;
-  filter: blur(1.08px);
-  -webkit-animation: 28s float infinite;
-          animation: 28s float infinite;
-}
-body.error .particle:nth-child(55) {
-  top: 34.3558282209%;
-  left: 72.9064039409%;
-  font-size: 15px;
-  filter: blur(1.1px);
-  -webkit-animation: 23s floatReverse2 infinite;
-          animation: 23s floatReverse2 infinite;
-}
-body.error .particle:nth-child(56) {
-  top: 68.8806888069%;
-  left: 57.2556762093%;
-  font-size: 13px;
-  filter: blur(1.12px);
-  -webkit-animation: 27s floatReverse2 infinite;
-          animation: 27s floatReverse2 infinite;
-}
-body.error .particle:nth-child(57) {
-  top: 47.1165644172%;
-  left: 85.7142857143%;
-  font-size: 15px;
-  filter: blur(1.14px);
-  -webkit-animation: 32s float infinite;
-          animation: 32s float infinite;
-}
-body.error .particle:nth-child(58) {
-  top: 23.6162361624%;
-  left: 76.011846002%;
-  font-size: 13px;
-  filter: blur(1.16px);
-  -webkit-animation: 25s floatReverse infinite;
-          animation: 25s floatReverse infinite;
-}
-body.error .particle:nth-child(59) {
-  top: 23.5582822086%;
-  left: 31.5270935961%;
-  font-size: 15px;
-  filter: blur(1.18px);
-  -webkit-animation: 32s float infinite;
-          animation: 32s float infinite;
-}
-body.error .particle:nth-child(60) {
-  top: 25.5528255528%;
-  left: 58.1854043393%;
-  font-size: 14px;
-  filter: blur(1.2px);
-  -webkit-animation: 32s floatReverse infinite;
-          animation: 32s floatReverse infinite;
-}
-body.error .particle:nth-child(61) {
-  top: 50.7317073171%;
-  left: 35.2941176471%;
-  font-size: 20px;
-  filter: blur(1.22px);
-  -webkit-animation: 33s float infinite;
-          animation: 33s float infinite;
-}
-body.error .particle:nth-child(62) {
-  top: 72.1071863581%;
-  left: 54.8481880509%;
-  font-size: 21px;
-  filter: blur(1.24px);
-  -webkit-animation: 33s float2 infinite;
-          animation: 33s float2 infinite;
-}
-body.error .particle:nth-child(63) {
-  top: 52.6187576127%;
-  left: 50.930460333%;
-  font-size: 21px;
-  filter: blur(1.26px);
-  -webkit-animation: 22s float2 infinite;
-          animation: 22s float2 infinite;
-}
-body.error .particle:nth-child(64) {
-  top: 29.5566502463%;
-  left: 14.8221343874%;
-  font-size: 12px;
-  filter: blur(1.28px);
-  -webkit-animation: 34s float2 infinite;
-          animation: 34s float2 infinite;
-}
-body.error .particle:nth-child(65) {
-  top: 11.6504854369%;
-  left: 63.4765625%;
+body.error .particle:nth-child(30) {
+  top: 34.9514563107%;
+  left: 8.7890625%;
   font-size: 24px;
-  filter: blur(1.3px);
-  -webkit-animation: 37s float infinite;
-          animation: 37s float infinite;
-}
-body.error .particle:nth-child(66) {
-  top: 49.0196078431%;
-  left: 95.4724409449%;
-  font-size: 16px;
-  filter: blur(1.32px);
+  filter: blur(0.6px);
   -webkit-animation: 21s floatReverse infinite;
           animation: 21s floatReverse infinite;
 }
-body.error .particle:nth-child(67) {
-  top: 30.1703163017%;
-  left: 62.6223091977%;
-  font-size: 22px;
-  filter: blur(1.34px);
-  -webkit-animation: 30s floatReverse2 infinite;
-          animation: 30s floatReverse2 infinite;
-}
-body.error .particle:nth-child(68) {
-  top: 7.7575757576%;
-  left: 19.512195122%;
-  font-size: 25px;
-  filter: blur(1.36px);
-  -webkit-animation: 27s floatReverse2 infinite;
-          animation: 27s floatReverse2 infinite;
-}
-body.error .particle:nth-child(69) {
-  top: 16.5048543689%;
-  left: 44.921875%;
-  font-size: 24px;
-  filter: blur(1.38px);
-  -webkit-animation: 23s floatReverse infinite;
-          animation: 23s floatReverse infinite;
-}
-body.error .particle:nth-child(70) {
-  top: 10.8374384236%;
-  left: 61.2648221344%;
-  font-size: 12px;
-  filter: blur(1.4px);
+body.error .particle:nth-child(31) {
+  top: 58.8235294118%;
+  left: 95.4724409449%;
+  font-size: 16px;
+  filter: blur(0.62px);
   -webkit-animation: 26s float2 infinite;
           animation: 26s float2 infinite;
 }
-body.error .particle:nth-child(71) {
-  top: 60.024600246%;
-  left: 65.1530108588%;
-  font-size: 13px;
-  filter: blur(1.42px);
-  -webkit-animation: 30s floatReverse infinite;
-          animation: 30s floatReverse infinite;
-}
-body.error .particle:nth-child(72) {
-  top: 12.823674476%;
-  left: 90.9990108803%;
-  font-size: 11px;
-  filter: blur(1.44px);
-  -webkit-animation: 32s floatReverse2 infinite;
-          animation: 32s floatReverse2 infinite;
-}
-body.error .particle:nth-child(73) {
-  top: 24.3605359318%;
-  left: 13.7120470127%;
+body.error .particle:nth-child(32) {
+  top: 64.3118148599%;
+  left: 89.1283055828%;
   font-size: 21px;
-  filter: blur(1.46px);
-  -webkit-animation: 27s float infinite;
-          animation: 27s float infinite;
+  filter: blur(0.64px);
+  -webkit-animation: 38s floatReverse infinite;
+          animation: 38s floatReverse infinite;
 }
-body.error .particle:nth-child(74) {
-  top: 32.4324324324%;
-  left: 51.2820512821%;
-  font-size: 14px;
-  filter: blur(1.48px);
-  -webkit-animation: 25s float2 infinite;
-          animation: 25s float2 infinite;
-}
-body.error .particle:nth-child(75) {
-  top: 52.3636363636%;
-  left: 86.8292682927%;
-  font-size: 25px;
-  filter: blur(1.5px);
-  -webkit-animation: 28s floatReverse2 infinite;
-          animation: 28s floatReverse2 infinite;
-}
-body.error .particle:nth-child(76) {
-  top: 29.0909090909%;
-  left: 9.756097561%;
-  font-size: 25px;
-  filter: blur(1.52px);
-  -webkit-animation: 37s floatReverse infinite;
-          animation: 37s floatReverse infinite;
-}
-body.error .particle:nth-child(77) {
-  top: 93.7198067633%;
-  left: 81.7120622568%;
-  font-size: 28px;
-  filter: blur(1.54px);
-  -webkit-animation: 40s float2 infinite;
-          animation: 40s float2 infinite;
-}
-body.error .particle:nth-child(78) {
-  top: 72.5513905683%;
-  left: 12.6582278481%;
-  font-size: 27px;
-  filter: blur(1.56px);
+body.error .particle:nth-child(33) {
+  top: 22.6322263223%;
+  left: 67.1273445212%;
+  font-size: 13px;
+  filter: blur(0.66px);
   -webkit-animation: 30s float2 infinite;
           animation: 30s float2 infinite;
 }
-body.error .particle:nth-child(79) {
-  top: 63.1834750911%;
-  left: 80.156402737%;
-  font-size: 23px;
-  filter: blur(1.58px);
-  -webkit-animation: 26s floatReverse2 infinite;
-          animation: 26s floatReverse2 infinite;
+body.error .particle:nth-child(34) {
+  top: 61.6891064871%;
+  left: 94.395280236%;
+  font-size: 17px;
+  filter: blur(0.68px);
+  -webkit-animation: 24s floatReverse2 infinite;
+          animation: 24s floatReverse2 infinite;
 }
-body.error .particle:nth-child(80) {
-  top: 77.7642770352%;
-  left: 53.7634408602%;
-  font-size: 23px;
-  filter: blur(1.6px);
+body.error .particle:nth-child(35) {
+  top: 69.4813027744%;
+  left: 87.4635568513%;
+  font-size: 29px;
+  filter: blur(0.7px);
+  -webkit-animation: 40s float2 infinite;
+          animation: 40s float2 infinite;
+}
+body.error .particle:nth-child(36) {
+  top: 19.4174757282%;
+  left: 23.4375%;
+  font-size: 24px;
+  filter: blur(0.72px);
+  -webkit-animation: 32s floatReverse2 infinite;
+          animation: 32s floatReverse2 infinite;
+}
+body.error .particle:nth-child(37) {
+  top: 4.8959608323%;
+  left: 35.3982300885%;
+  font-size: 17px;
+  filter: blur(0.74px);
+  -webkit-animation: 32s floatReverse infinite;
+          animation: 32s floatReverse infinite;
+}
+body.error .particle:nth-child(38) {
+  top: 34.5252774353%;
+  left: 69.2383778437%;
+  font-size: 11px;
+  filter: blur(0.76px);
+  -webkit-animation: 34s float2 infinite;
+          animation: 34s float2 infinite;
+}
+body.error .particle:nth-child(39) {
+  top: 61.0909090909%;
+  left: 61.4634146341%;
+  font-size: 25px;
+  filter: blur(0.78px);
+  -webkit-animation: 33s float infinite;
+          animation: 33s float infinite;
+}
+body.error .particle:nth-child(40) {
+  top: 70.5882352941%;
+  left: 83.6614173228%;
+  font-size: 16px;
+  filter: blur(0.8px);
+  -webkit-animation: 37s float infinite;
+          animation: 37s float infinite;
+}
+body.error .particle:nth-child(41) {
+  top: 73.7100737101%;
+  left: 83.8264299803%;
+  font-size: 14px;
+  filter: blur(0.82px);
+  -webkit-animation: 39s float infinite;
+          animation: 39s float infinite;
+}
+body.error .particle:nth-child(42) {
+  top: 9.6735187424%;
+  left: 59.3962999026%;
+  font-size: 27px;
+  filter: blur(0.84px);
+  -webkit-animation: 26s floatReverse infinite;
+          animation: 26s floatReverse infinite;
+}
+body.error .particle:nth-child(43) {
+  top: 88.3495145631%;
+  left: 41.9921875%;
+  font-size: 24px;
+  filter: blur(0.86px);
+  -webkit-animation: 26s float infinite;
+          animation: 26s float infinite;
+}
+body.error .particle:nth-child(44) {
+  top: 28.0193236715%;
+  left: 46.6926070039%;
+  font-size: 28px;
+  filter: blur(0.88px);
+  -webkit-animation: 29s float infinite;
+          animation: 29s float infinite;
+}
+body.error .particle:nth-child(45) {
+  top: 20.3389830508%;
+  left: 64.3274853801%;
+  font-size: 26px;
+  filter: blur(0.9px);
+  -webkit-animation: 30s floatReverse infinite;
+          animation: 30s floatReverse infinite;
+}
+body.error .particle:nth-child(46) {
+  top: 6.8376068376%;
+  left: 32.3846908734%;
+  font-size: 19px;
+  filter: blur(0.92px);
+  -webkit-animation: 29s float2 infinite;
+          animation: 29s float2 infinite;
+}
+body.error .particle:nth-child(47) {
+  top: 55.0724637681%;
+  left: 92.4124513619%;
+  font-size: 28px;
+  filter: blur(0.94px);
+  -webkit-animation: 25s float infinite;
+          animation: 25s float infinite;
+}
+body.error .particle:nth-child(48) {
+  top: 4.8661800487%;
+  left: 45.988258317%;
+  font-size: 22px;
+  filter: blur(0.96px);
+  -webkit-animation: 34s float infinite;
+          animation: 34s float infinite;
+}
+body.error .particle:nth-child(49) {
+  top: 26.3093788063%;
+  left: 15.6709108717%;
+  font-size: 21px;
+  filter: blur(0.98px);
+  -webkit-animation: 23s float infinite;
+          animation: 23s float infinite;
+}
+body.error .particle:nth-child(50) {
+  top: 57.5609756098%;
+  left: 8.8235294118%;
+  font-size: 20px;
+  filter: blur(1px);
+  -webkit-animation: 39s float infinite;
+          animation: 39s float infinite;
+}
+body.error .particle:nth-child(51) {
+  top: 68.4596577017%;
+  left: 24.557956778%;
+  font-size: 18px;
+  filter: blur(1.02px);
+  -webkit-animation: 23s float infinite;
+          animation: 23s float infinite;
+}
+body.error .particle:nth-child(52) {
+  top: 39.7094430993%;
+  left: 17.5438596491%;
+  font-size: 26px;
+  filter: blur(1.04px);
+  -webkit-animation: 31s float infinite;
+          animation: 31s float infinite;
+}
+body.error .particle:nth-child(53) {
+  top: 82.8915662651%;
+  left: 63.1067961165%;
+  font-size: 30px;
+  filter: blur(1.06px);
   -webkit-animation: 21s float2 infinite;
           animation: 21s float2 infinite;
+}
+body.error .particle:nth-child(54) {
+  top: 62.8220858896%;
+  left: 72.9064039409%;
+  font-size: 15px;
+  filter: blur(1.08px);
+  -webkit-animation: 33s floatReverse infinite;
+          animation: 33s floatReverse infinite;
+}
+body.error .particle:nth-child(55) {
+  top: 16.7487684729%;
+  left: 91.8972332016%;
+  font-size: 12px;
+  filter: blur(1.1px);
+  -webkit-animation: 31s floatReverse infinite;
+          animation: 31s floatReverse infinite;
+}
+body.error .particle:nth-child(56) {
+  top: 27.1515151515%;
+  left: 83.9024390244%;
+  font-size: 25px;
+  filter: blur(1.12px);
+  -webkit-animation: 29s floatReverse2 infinite;
+          animation: 29s floatReverse2 infinite;
+}
+body.error .particle:nth-child(57) {
+  top: 93.5960591133%;
+  left: 27.6679841897%;
+  font-size: 12px;
+  filter: blur(1.14px);
+  -webkit-animation: 29s float infinite;
+          animation: 29s float infinite;
+}
+body.error .particle:nth-child(58) {
+  top: 18.3353437877%;
+  left: 42.7599611273%;
+  font-size: 29px;
+  filter: blur(1.16px);
+  -webkit-animation: 35s floatReverse infinite;
+          animation: 35s floatReverse infinite;
+}
+body.error .particle:nth-child(59) {
+  top: 73.9827373613%;
+  left: 36.5974282888%;
+  font-size: 11px;
+  filter: blur(1.18px);
+  -webkit-animation: 25s floatReverse2 infinite;
+          animation: 25s floatReverse2 infinite;
+}
+body.error .particle:nth-child(60) {
+  top: 68.7960687961%;
+  left: 93.6883629191%;
+  font-size: 14px;
+  filter: blur(1.2px);
+  -webkit-animation: 28s float infinite;
+          animation: 28s float infinite;
+}
+body.error .particle:nth-child(61) {
+  top: 26.5030674847%;
+  left: 12.8078817734%;
+  font-size: 15px;
+  filter: blur(1.22px);
+  -webkit-animation: 29s floatReverse infinite;
+          animation: 29s floatReverse infinite;
+}
+body.error .particle:nth-child(62) {
+  top: 53.2687651332%;
+  left: 33.1384015595%;
+  font-size: 26px;
+  filter: blur(1.24px);
+  -webkit-animation: 21s float2 infinite;
+          animation: 21s float2 infinite;
+}
+body.error .particle:nth-child(63) {
+  top: 14.5808019441%;
+  left: 66.4711632454%;
+  font-size: 23px;
+  filter: blur(1.26px);
+  -webkit-animation: 34s floatReverse infinite;
+          animation: 34s floatReverse infinite;
+}
+body.error .particle:nth-child(64) {
+  top: 14.5631067961%;
+  left: 95.703125%;
+  font-size: 24px;
+  filter: blur(1.28px);
+  -webkit-animation: 30s float2 infinite;
+          animation: 30s float2 infinite;
+}
+body.error .particle:nth-child(65) {
+  top: 62.9766297663%;
+  left: 31.5893385982%;
+  font-size: 13px;
+  filter: blur(1.3px);
+  -webkit-animation: 33s float2 infinite;
+          animation: 33s float2 infinite;
+}
+body.error .particle:nth-child(66) {
+  top: 69.7788697789%;
+  left: 13.8067061144%;
+  font-size: 14px;
+  filter: blur(1.32px);
+  -webkit-animation: 31s floatReverse infinite;
+          animation: 31s floatReverse infinite;
+}
+body.error .particle:nth-child(67) {
+  top: 67.7146311971%;
+  left: 20.4479065239%;
+  font-size: 27px;
+  filter: blur(1.34px);
+  -webkit-animation: 22s floatReverse2 infinite;
+          animation: 22s floatReverse2 infinite;
+}
+body.error .particle:nth-child(68) {
+  top: 64.3118148599%;
+  left: 49.9510284035%;
+  font-size: 21px;
+  filter: blur(1.36px);
+  -webkit-animation: 29s float infinite;
+          animation: 29s float infinite;
+}
+body.error .particle:nth-child(69) {
+  top: 29.520295203%;
+  left: 5.9230009872%;
+  font-size: 13px;
+  filter: blur(1.38px);
+  -webkit-animation: 22s floatReverse infinite;
+          animation: 22s floatReverse infinite;
+}
+body.error .particle:nth-child(70) {
+  top: 66.5850673195%;
+  left: 97.3451327434%;
+  font-size: 17px;
+  filter: blur(1.4px);
+  -webkit-animation: 37s floatReverse infinite;
+          animation: 37s floatReverse infinite;
+}
+body.error .particle:nth-child(71) {
+  top: 90.8424908425%;
+  left: 72.6202158979%;
+  font-size: 19px;
+  filter: blur(1.42px);
+  -webkit-animation: 26s floatReverse infinite;
+          animation: 26s floatReverse infinite;
+}
+body.error .particle:nth-child(72) {
+  top: 67.2350791717%;
+  left: 40.1567091087%;
+  font-size: 21px;
+  filter: blur(1.44px);
+  -webkit-animation: 38s float2 infinite;
+          animation: 38s float2 infinite;
+}
+body.error .particle:nth-child(73) {
+  top: 71.3253012048%;
+  left: 43.6893203883%;
+  font-size: 30px;
+  filter: blur(1.46px);
+  -webkit-animation: 27s floatReverse infinite;
+          animation: 27s floatReverse infinite;
+}
+body.error .particle:nth-child(74) {
+  top: 13.6752136752%;
+  left: 68.6947988224%;
+  font-size: 19px;
+  filter: blur(1.48px);
+  -webkit-animation: 34s floatReverse infinite;
+          animation: 34s floatReverse infinite;
+}
+body.error .particle:nth-child(75) {
+  top: 78.1664656212%;
+  left: 4.8590864917%;
+  font-size: 29px;
+  filter: blur(1.5px);
+  -webkit-animation: 27s float infinite;
+          animation: 27s float infinite;
+}
+body.error .particle:nth-child(76) {
+  top: 13.7086903305%;
+  left: 46.2143559489%;
+  font-size: 17px;
+  filter: blur(1.52px);
+  -webkit-animation: 23s float2 infinite;
+          animation: 23s float2 infinite;
+}
+body.error .particle:nth-child(77) {
+  top: 65.2068126521%;
+  left: 25.4403131115%;
+  font-size: 22px;
+  filter: blur(1.54px);
+  -webkit-animation: 30s floatReverse2 infinite;
+          animation: 30s floatReverse2 infinite;
+}
+body.error .particle:nth-child(78) {
+  top: 97.1779141104%;
+  left: 67.9802955665%;
+  font-size: 15px;
+  filter: blur(1.56px);
+  -webkit-animation: 38s float infinite;
+          animation: 38s float infinite;
+}
+body.error .particle:nth-child(79) {
+  top: 9.7442143727%;
+  left: 9.7943192948%;
+  font-size: 21px;
+  filter: blur(1.58px);
+  -webkit-animation: 38s floatReverse infinite;
+          animation: 38s floatReverse infinite;
+}
+body.error .particle:nth-child(80) {
+  top: 60.487804878%;
+  left: 70.5882352941%;
+  font-size: 20px;
+  filter: blur(1.6px);
+  -webkit-animation: 27s floatReverse infinite;
+          animation: 27s floatReverse infinite;
 }
 @-webkit-keyframes apparition {
   from {
@@ -832,73 +972,6 @@ body.error footer .social-links svg {
 }
 body.error footer p {
   color: #fff;
-}
-body.dark {
-  background-color: #21243D;
-}
-body.dark img {
-  color: #EDF7FA;
-}
-body.dark .box .animate {
-  border: 6px solid #fff;
-}
-body.dark header {
-  background-color: transparent;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-}
-body.dark header .header-container {
-  background-color: transparent;
-  -webkit-backdrop-filter: blur(35px);
-          backdrop-filter: blur(35px);
-}
-body.dark header .header-container .burger .line {
-  background-color: #EDF7FA;
-}
-body.dark header a.logo {
-  color: #fff;
-}
-body.dark header nav ul li a {
-  color: #EDF7FA;
-}
-body.dark #particles-js .text h1, body.dark #particles-js .text p {
-  color: #EDF7FA;
-}
-body.dark section.posts {
-  background-color: #142850;
-}
-body.dark section.posts .recent p {
-  color: #EDF7FA;
-}
-body.dark section.posts .container .info .info-item {
-  background-color: #21243D;
-}
-body.dark section.posts .container .info .info-item h3, body.dark section.posts .container .info .info-item p {
-  color: #fff;
-}
-body.dark section.posts .container .info .info-item .line {
-  background-color: #fff;
-}
-body.dark section.works .works-text p, body.dark section.works .works-text h1 {
-  color: #EDF7FA;
-}
-body.dark section.works .card .card-body h2, body.dark section.works .card .card-body p {
-  color: #fff;
-}
-body.dark section.blog h1, body.dark section.blog h2 {
-  color: #EDF7FA;
-}
-body.dark section.blog p, body.dark section.blog .card .text p:nth-child(1) {
-  color: #fff;
-}
-body.dark section.blog .line {
-  background-color: #fff;
-}
-body.dark footer .social-links svg {
-  fill: #fff;
-}
-body.dark footer p {
-  color: #EDF7FA;
 }
 
 .ui-switch .slider {

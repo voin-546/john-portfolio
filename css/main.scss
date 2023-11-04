@@ -9,6 +9,79 @@
     scroll-behavior: smooth;
     user-select: none;
 }
+@mixin darkTheme {
+    &.dark {
+        background-color: #21243D;
+        img {
+            color: #EDF7FA;
+        }
+        .box .animate {
+            border: 6px solid #fff;
+        }
+        header {
+            background-color: transparent;
+            backdrop-filter: blur(5px);
+            .header-container {
+                background-color: transparent;
+                backdrop-filter: blur(35px);
+                .burger .line {
+                    background-color: #EDF7FA;
+                }
+            }
+            a.logo {
+                color: #fff;
+            }
+            nav ul li a {
+                color: #EDF7FA;
+            }
+        }
+        #particles-js {
+            .text {
+                h1,  p {
+                    color: #EDF7FA;
+                }
+            }
+        }
+        section.posts {
+            background-color: #142850;
+            .recent p { color: #EDF7FA; }
+            .container .info {
+                .info-item {
+                    background-color: #21243D;
+                    h3,  p {
+                        color: #fff;
+                    }
+                    .line {
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+        section.works {
+            .works-text p,  .works-text h1 {
+                color: #EDF7FA;
+            }
+             .card .card-body {
+                h2,  p { color: #fff; }
+            }
+        }
+        section.blog {
+            h1,  h2 {
+                color: #EDF7FA;
+            }
+            p,  .card .text p:nth-child(1) { color: #fff; }
+            .line {
+                background-color: #fff;
+            }
+        }
+        footer {
+            .social-links {
+                svg { fill: #fff; }
+            }
+            p { color: #EDF7FA; }
+        }
+    }
+}
 $anims: float,  floatReverse, float2,  floatReverse2;
 $easeSmooth: cubic-bezier(.39, .575, .28, .995);
 ::-webkit-scrollbar {
@@ -37,9 +110,15 @@ $easeSmooth: cubic-bezier(.39, .575, .28, .995);
       opacity: 0;
     }
   }
+  @media (prefers-color-scheme: dark) {
+    body {
+        @include darkTheme();
+    }
+  }
 body {
     background-color: #fff;
     transition: background-color 1.2s;
+    @include darkTheme();
     &.error {
         background-color: #203075;
         position: relative;
@@ -175,77 +254,6 @@ body {
                 color: #fff;
             }
         }    
-    }
-    &.dark {
-        background-color: #21243D;
-        img {
-            color: #EDF7FA;
-        }
-        .box .animate {
-            border: 6px solid #fff;
-        }
-        header {
-            background-color: transparent;
-            backdrop-filter: blur(5px);
-            .header-container {
-                background-color: transparent;
-                backdrop-filter: blur(35px);
-                .burger .line {
-                    background-color: #EDF7FA;
-                }
-            }
-            a.logo {
-                color: #fff;
-            }
-            nav ul li a {
-                color: #EDF7FA;
-            }
-        }
-        #particles-js {
-            .text {
-                h1,  p {
-                    color: #EDF7FA;
-                }
-            }
-        }
-        section.posts {
-            background-color: #142850;
-            .recent p { color: #EDF7FA; }
-            .container .info {
-                .info-item {
-                    background-color: #21243D;
-                    h3,  p {
-                        color: #fff;
-                    }
-                    .line {
-                        background-color: #fff;
-                    }
-                }
-            }
-        }
-        section.works {
-            .works-text p,  .works-text h1 {
-                color: #EDF7FA;
-            }
-             .card .card-body {
-                h2,  p { color: #fff; }
-            }
-        }
-        section.blog {
-            h1,  h2 {
-                color: #EDF7FA;
-            }
-            p,  .card .text p:nth-child(1) { color: #fff; }
-            .line {
-                background-color: #fff;
-            }
-        }
-        footer {
-            .social-links {
-                svg { fill: #fff; }
-            }
-            p { color: #EDF7FA; }
-        }
     }
 }
 // DARK THEME TOGGLER
